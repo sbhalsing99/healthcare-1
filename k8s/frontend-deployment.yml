@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: healthcare-frontend
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: healthcare-frontend
+
+  template:
+    metadata:
+      labels:
+        app: healthcare-frontend
+
+    spec:
+      containers:
+      - name: healthcare-frontend
+        image: sbhalsing99/healthcare-frontend
+
+        ports:
+        - containerPort: 3000

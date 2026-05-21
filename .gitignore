@@ -1,0 +1,45 @@
+# Maven
+target/
+
+# Java
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+
+# Kubernetes temp files
+*.tmp
+
+# Node modules
+node_modules/
+
+# Docker
+*.tar
+
+# Minikube
+.minikube/
+
+# Build files
+build/
+
+# Secret files
+application-secret.properties
+
+# Terraform
+.terraform/
+terraform.tfstate
+
+# ArgoCD generated
+argocd-app.yaml
