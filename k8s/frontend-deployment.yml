@@ -4,7 +4,7 @@ metadata:
   name: healthcare-frontend
 
 spec:
-  replicas: 2
+  replicas: 1
 
   selector:
     matchLabels:
@@ -18,7 +18,6 @@ spec:
     spec:
       containers:
       - name: healthcare-frontend
-        image: sbhalsing99/healthcare-frontend
-
+        image: sbhalsing99/healthcare-frontend:latest
         ports:
         - containerPort: 3000
